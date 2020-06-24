@@ -1,0 +1,13 @@
+title: Blog
+route: '/blog/{slug}'
+amp: true
+template: blog/show
+blueprints: blog
+taxonomies:
+  - topics
+revisions: false
+date: true
+default_status: draft
+date_behavior:
+  past: public
+  future: private

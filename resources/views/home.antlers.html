@@ -1,0 +1,41 @@
+<h1 class="text-4xl verveine leading-6 mb-8">Here's what's new with Us</h1>
+
+{{ collection from="blog" limit="10" paginate="true" as="posts" }}
+{{ if no_results }}
+<p>Aww, there are no results.</p>
+{{ /if }}
+
+{{ posts }}
+{{ if first }}
+{{ partial:blog/large }}
+{{ else }}
+{{ partial:blog/small }}
+{{ /if }}
+{{ /posts }}
+
+{{ paginate }}
+<div class="mt-4 px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6">
+    <div class="hidden sm:block">
+        <p class="text-sm leading-5 text-gray-700">
+            Showing page
+            <span class="font-medium">{{ current_page }}</span>
+            of
+            <span class="font-medium">{{ total_pages }}</span>.
+
+            Posts: <span class="font-medium">{{ total_items }}</span>
+        </p>
+    </div>
+    <div class="flex-1 flex justify-between sm:justify-end">
+        <a href="{{ prev_page }}"
+            class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            Previous
+        </a>
+        <a href="{{ next_page }}"
+            class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm leading-5 font-medium rounded-md text-gray-700 bg-white hover:text-gray-500 focus:outline-none focus:shadow-outline-blue focus:border-blue-300 active:bg-gray-100 active:text-gray-700 transition ease-in-out duration-150">
+            Next
+        </a>
+    </div>
+</div>
+
+{{ /paginate }}
+{{ /collection }}

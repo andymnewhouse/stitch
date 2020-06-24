@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="{{ site_short_locale }}">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ title }} | {{ site_name }}</title>
+    <link rel="stylesheet" href="https://use.typekit.net/ltm2rvz.css">
+    <link href="/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="py-4 px-12 flex justify-between">
+        <a href="/" class="text-2xl text-purple-700 uppercase verveine">
+            Newest Newhouse
+        </a>
+        <div>
+            <a href="/" class="p-2">Home</a>
+        </div>
+    </nav>
+    <main class="container mt-16 mb-32">
+        <div class="md:flex">
+            <div class="w-full md:w-3/4 px-4">
+                {{ template_content }}
+            </div>
+            <div class="hidden md:block md:w-1/4 px-8 mt-4">
+                <div class="mb-8">
+                    <h2 class="text-3xl verveine leading-6 mb-4">Authors</h2>
+                    {{ users }}
+                    <a href="{{ url }}"
+                        class="flex text-purple-600 items-center hover:bg-gray-100 transition ease-in-out duration-300 p-1 rounded-lg mb-1">
+                        <img class="relative mr-4 inline-block h-8 w-8 rounded-full"
+                            src="/assets/{{ name | lower }}/{{ name | lower }}.jpg" alt="{{ name }}" />
+                        {{ name }}
+                    </a>
+                    {{ /users }}
+                </div>
+
+                <div>
+                    <h2 class="text-4xl verveine leading-6 mb-4">Topics</h2>
+                    {{ taxonomy:topics }}
+                    {{ partial:topics/small }}
+                    {{ /taxonomy:topics }}
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

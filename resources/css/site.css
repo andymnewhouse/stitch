@@ -1,0 +1,19 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.verveine {
+    font-family: verveine, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+p {
+    @apply text-gray-800 leading-6;
+}
+
+p:not(:last-child) {
+    @apply mb-4;
+}

@@ -1,0 +1,20 @@
+<a href="{{ url }}"
+    class="p-4 mb-1 text-purple-600 text-lg rounded-lg hover:bg-gray-100 transition ease-in-out duration-300 flex items-center justify-between">
+    <div class="flex items-center">
+        <div class="w-16 flex relative z-0 p-1 overflow-hidden mr-4">
+            {{ topics }}
+            <div
+                class="relative z-{{count}}0 {{ if !first}}-ml-2{{/if}} inline-block h-8 w-8 {{background_color}} p-1 rounded-full text-white shadow-solid">
+                {{ svg src="{icon}" class="fill-current" }}
+            </div>
+            {{ /topics }}
+        </div>
+        {{ title }}
+    </div>
+    <div>
+        {{ author }}
+        <img class="z-{{count}}0 {{ if !first}}-ml-2{{/if}} inline-block h-8 w-8 rounded-full text-white shadow-solid"
+            src="/assets/{{ name | lower }}/{{ name | lower }}.jpg" alt="Avatar of{{ name }}" />
+        {{ /author }}
+    </div>
+</a>

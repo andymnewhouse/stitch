@@ -1,0 +1,23 @@
+<article class="w-full flex mb-2 rounded-lg overflow-hidden">
+    <div class="w-2/3 h-64 bg-blue-500 bg-cover bg-center" style="background-image: url({{ social_image }});">
+        <img src="{{ social_image }}" alt="" class="sr-only">
+    </div>
+    <div class="w-1/2 p-4 bg-purple-700">
+        <a href="{{ url }}" class="text-2xl text-white block mb-4">{{ title }}</a>
+        {{ topics }}
+        <div
+            class="relative z-{{count}}0 {{ if !first}}-ml-2{{/if}} inline-block h-8 w-8 {{background_color}} p-1 rounded-full text-white shadow-solid">
+            {{ svg src="{icon}" class="fill-current" }}
+        </div>
+        {{ /topics }}
+        <p class="text-gray-100 mt-2">
+            Written by
+            {{ author }}
+            {{ name }}
+            {{ /author }}
+        </p>
+        <p class="text-gray-100 mt-2">
+            {{ date }}
+        </p>
+    </div>
+</article>
