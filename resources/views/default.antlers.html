@@ -1,34 +1,5 @@
 <div class="w-full md:w-3/4 mx-auto px-4">
     <h1 class="text-4xl verveine leading-6 mb-4">{{ title }}</h1>
 
-    {{ bard }}
-
-    {{ if type == "text" }}
-
-    <div class="text-gray-800 leading-6">
-        {{ text }}
-    </div>
-
-    {{ elseif type == "images" }}
-
-    <div class="py-8 flex flex-wrap -mx-4">
-        {{ images }}
-        <div class="w-1/2 mb-4 lg:mb-0 lg:flex-1 px-4 {{ if images > 0 }}h-64{{ /if }}">
-            <div class="rounded-lg bg-cover bg-center h-full shadow" style="background-image: url({{ url }})">
-                <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
-            </div>
-        </div>
-        {{ /images }}
-    </div>
-
-    {{ elseif type == "image" }}
-    <div class="py-8 flex">
-        {{ image }}
-        <img src="{{ url }}" alt="{{ alt }}" class="mx-auto rounded-lg shadow" />
-        {{ /image }}
-    </div>
-
-    {{ /if }}
-
-    {{ /bard }}
+    {{ partial src="bard" }}
 </div>

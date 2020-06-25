@@ -18,6 +18,14 @@ p:not(:last-child), ul {
     @apply mb-4;
 }
 
+ul {
+    @apply list-disc ml-6;
+}
+
+li {
+    @apply mb-1;
+}
+
 a {
     @apply text-purple-600;
 
