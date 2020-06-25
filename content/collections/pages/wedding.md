@@ -26,8 +26,47 @@ bard:
     content:
       -
         type: text
-        text: 'Our ceremony will be held at the Lincoln Park Conservatory followed by dinner at Casati''s'
+        text: 'Our ceremony will be held at the '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'http://lincolnparkconservancy.org/projects/conservatory-garden/'
+              target: _blank
+              rel: null
+        text: 'Lincoln Park Conservatory'
+      -
+        type: text
+        text: ' followed by dinner at '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.cpvino.com/'
+              target: _blank
+              rel: null
+        text: 'Casati''s'
+      -
+        type: text
+        text: .
+  -
+    type: paragraph
+  -
+    type: set
+    attrs:
+      values:
+        type: images
+        images:
+          - wedding/conservatory.jpg
+          - wedding/casatis.jpg
+        height: h-64
+  -
+    type: paragraph
 updated_by: 874737d5-e795-4bc7-b83c-e4b78fba4586
-updated_at: 1593042239
+updated_at: 1593044554
 id: cae9c5d0-260d-4c7d-a2a7-922e7f28e631
 ---
