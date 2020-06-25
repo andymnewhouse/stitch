@@ -1,3 +1,11 @@
 title: Pages
-structure: pages
 route: '{parent_uri}/{slug}'
+amp: true
+template: default
+blueprints: default
+revisions: false
+date: true
+default_status: draft
+date_behavior:
+  past: public
+  future: private
