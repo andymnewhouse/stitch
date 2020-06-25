@@ -1,12 +1,15 @@
 title: Blog
-route: '/blog/{slug}'
 amp: true
 template: blog/show
-blueprints: blog
+layout: layout
+blueprints:
+  - blog
 taxonomies:
   - topics
 revisions: false
+route: '/blog/{slug}'
 date: true
+sort_dir: desc
 default_status: draft
 date_behavior:
   past: public

@@ -1,11 +1,15 @@
 title: Pages
-route: '{parent_uri}/{slug}'
-amp: true
 template: default
-blueprints: default
+layout: layout
+blueprints:
+  - default
 revisions: false
-date: true
+route: '{parent_uri}/{slug}'
+sort_dir: desc
 default_status: draft
 date_behavior:
   past: public
   future: private
+structure:
+  root: true
+  tree: {  }
