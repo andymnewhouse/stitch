@@ -1,67 +1,91 @@
-<h1 class="text-4xl verveine leading-6 mb-4">{{ title }}</h1>
+<div class="md:flex">
+    <div class="w-full md:w-3/4 mx-auto px-4">
+        <h1 class="text-4xl verveine leading-6 mb-4">{{ title }}</h1>
 
-<p class="text-purple-800 italic text-sm mb-8">Written by {{ author }} {{ name }} {{ /author }} on {{ date }}</p>
+        <p class="text-purple-800 italic text-sm mb-8">Written by {{ author }} {{ name }} {{ /author }} on {{ date }}</p>
 
-<article>
-    {{ bard }}
+        <article>
+            {{ bard }}
 
-    {{ if type == "text" }}
+            {{ if type == "text" }}
 
-    <div class="text-gray-800 leading-6">
-        {{ text }}
-    </div>
-
-    {{ elseif type == "images" }}
-
-    <div class="py-8 flex flex-wrap -mx-4">
-        {{ images }}
-        <div class="w-1/2 mb-4 lg:mb-0 lg:flex-1 px-4 {{ if images > 0 }}h-64{{ /if }}">
-            <div class="rounded-lg bg-cover bg-center h-full shadow" style="background-image: url({{ url }})">
-                <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
+            <div class="text-gray-800 leading-6">
+                {{ text }}
             </div>
+
+            {{ elseif type == "images" }}
+
+            <div class="py-8 flex flex-wrap -mx-4">
+                {{ images }}
+                <div class="w-1/2 mb-4 lg:mb-0 lg:flex-1 px-4 {{ if images > 0 }}h-64{{ /if }}">
+                    <div class="rounded-lg bg-cover bg-center h-full shadow" style="background-image: url({{ url }})">
+                        <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
+                    </div>
+                </div>
+                {{ /images }}
+            </div>
+
+            {{ elseif type == "image" }}
+            <div class="py-8 flex">
+                {{ image }}
+                <img src="{{ url }}" alt="{{ alt }}" class="mx-auto rounded-lg shadow" />
+                {{ /image }}
+            </div>
+
+            {{ /if }}
+
+            {{ /bard }}
+        </article>
+
+        <div class="mt-8 border-t border-gray-200 pt-4">
+            {{ collection:previous limit="1" as="posts" }}
+            <div class="mb-4">
+                <h2 class="text-xl verveine leading-6 mb-4">Previous Post</h2>
+                {{ if no_results }}
+                <p>Aww, there are no previous posts.</p>
+                {{ /if }}
+
+                {{ posts }}
+                {{ partial:blog/small }}
+                {{ /posts }}
+            </div>
+            {{ /collection:previous }}
+
+            {{ collection:next limit="1" as="posts" }}
+            <div class="mb-4">
+                <h2 class="text-xl verveine leading-6 mb-4">Next Post</h2>
+                {{ if no_results }}
+                <img src="https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif" alt="That's all folks Looney Toons gif"
+                    class="mx-auto rounded-lg shadow">
+                <p class="text-sm text-center mt-1 text-purple-800 italic"><a
+                        href="https://giphy.com/gifs/the-end-thats-all-folks-lD76yTC5zxZPG">via GIPHY</a></p>
+                {{ /if }}
+
+                {{ posts }}
+                {{ partial:blog/small }}
+                {{ /posts }}
+            </div>
+            {{ /collection:next }}
         </div>
-        {{ /images }}
     </div>
+    <div class="hidden md:block md:w-1/4 px-8 mt-4">
+        <div class="mb-8">
+            <h2 class="text-3xl verveine leading-6 mb-4">Authors</h2>
+            {{ users }}
+            <a href="{{ url }}"
+                class="flex text-purple-600 items-center hover:bg-gray-100 transition ease-in-out duration-300 p-1 rounded-lg mb-1">
+                <img class="relative mr-4 inline-block h-8 w-8 rounded-full"
+                    src="/assets/{{ name | lower }}/{{ name | lower }}.jpg" alt="{{ name }}" />
+                {{ name }}
+            </a>
+            {{ /users }}
+        </div>
 
-    {{ elseif type == "image" }}
-    <div class="py-8 flex">
-        {{ image }}
-        <img src="{{ url }}" alt="{{ alt }}" class="mx-auto rounded-lg shadow" />
-        {{ /image }}
+        <div>
+            <h2 class="text-4xl verveine leading-6 mb-4">Topics</h2>
+            {{ taxonomy:topics }}
+            {{ partial:topics/small }}
+            {{ /taxonomy:topics }}
+        </div>
     </div>
-
-    {{ /if }}
-
-    {{ /bard }}
-</article>
-
-<div class="mt-8 border-t border-gray-200 pt-4">
-    {{ collection:previous limit="1" as="posts" }}
-    <div class="mb-4">
-        <h2 class="text-xl verveine leading-6 mb-4">Previous Post</h2>
-        {{ if no_results }}
-        <p>Aww, there are no previous posts.</p>
-        {{ /if }}
-
-        {{ posts }}
-        {{ partial:blog/small }}
-        {{ /posts }}
-    </div>
-    {{ /collection:previous }}
-
-    {{ collection:next limit="1" as="posts" }}
-    <div class="mb-4">
-        <h2 class="text-xl verveine leading-6 mb-4">Next Post</h2>
-        {{ if no_results }}
-        <img src="https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif" alt="That's all folks Looney Toons gif"
-            class="mx-auto rounded-lg shadow">
-        <p class="text-sm text-center mt-1 text-purple-800 italic"><a
-                href="https://giphy.com/gifs/the-end-thats-all-folks-lD76yTC5zxZPG">via GIPHY</a></p>
-        {{ /if }}
-
-        {{ posts }}
-        {{ partial:blog/small }}
-        {{ /posts }}
-    </div>
-    {{ /collection:next }}
 </div>

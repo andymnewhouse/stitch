@@ -1,4 +1,8 @@
 title: Pages
 expects_root: true
 root: home
-tree: []
+tree:
+  -
+    entry: a7104a72-dd5f-4f89-b37a-e5134a76691a
+  -
+    entry: cae9c5d0-260d-4c7d-a2a7-922e7f28e631

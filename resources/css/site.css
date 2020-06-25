@@ -10,10 +10,38 @@
     font-style: normal;
 }
 
-p {
-    @apply text-gray-800 leading-6;
+p, ul, li {
+    @apply text-gray-800 leading-6 text-lg;
 }
 
-p:not(:last-child) {
+p:not(:last-child), ul {
     @apply mb-4;
+}
+
+a {
+    @apply text-purple-600;
+
+    &:hover {
+        @apply text-purple-700;
+    }
+
+    &:focus {
+        @apply text-purple-700 underline;
+    }
+}
+
+h1 {
+    @apply text-4xl verveine leading-6 mb-8;
+}
+
+h2 {
+    @apply text-3xl verveine leading-6 mb-6 mt-8;
+}
+
+h3 {
+    @apply text-2xl verveine leading-6 mb-4;
+}
+
+h4 {
+    @apply text-xl verveine leading-6 mb-4;
 }
