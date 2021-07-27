@@ -1,4 +1,5 @@
 name: 'Jess Newhouse'
 super: true
 avatar: jess.jpg
+password_hash: $2y$10$a9Wjvu.qlYN2h.4fmNiHWOe9n3l3q.hYq31K99ugJiL1Sym3dLAYa
 id: 3389ccfe-c2db-480d-aa93-2e4f80548e17
