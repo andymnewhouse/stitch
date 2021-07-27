@@ -1,0 +1,12 @@
+<a href="{{ url }}" class="relative top-0 block h-full overflow-hidden transition-all duration-100 ease-in-out bg-white shadow-lg dark:bg-gray-800 hover:-top-2 hover:shadow-xl rounded-xl">
+    <img class="{{ oversized ? 'hidden md:block' : 'hidden' }} squiggle" height="285" src="{{ glide:hero_image height="570" width="1472" fit="crop_focal" }}" alt="{{ hero_image:alt }}">
+    <img class="squiggle {{ oversized ?= 'md:hidden' }}" height="285" src="{{ glide:hero_image height="570" width="736" fit="crop_focal" }}" alt="{{ hero_image:alt }}">
+    <div class="px-8 py-6">
+        <h2 class="text-2xl font-bold leading-tight">
+            {{ title  }}
+        </h2>
+        <p class="flex items-center mt-4 text-xs text-gray-600 dark:text-gray-400">
+            {{ date }} · {{ author:name }}
+        </p>
+    </div>
+</a>

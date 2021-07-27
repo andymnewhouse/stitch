@@ -1,15 +1,5 @@
 title: Pages
-template: default
-layout: layout
-blueprints:
-  - default
 revisions: false
 route: '{parent_uri}/{slug}'
-sort_dir: desc
-default_status: draft
-date_behavior:
-  past: public
-  future: private
 structure:
   root: true
-  tree: {  }

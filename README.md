@@ -1,69 +1,67 @@
-<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo+Wordmark-Rad.svg" width="400" alt="Statamic Logo" /></p>
+<p align="center"><img src="https://statamic.com/assets/branding/Statamic-Logo-Rad.png" width="100" alt="Statamic Logo" /></p>
+<h1 align="center">
+  Statamic Starter Kit: Starter's Creek
+</h1>
 
-## About Statamic 3
+![Statamic 3.0+](https://img.shields.io/badge/Statamic-3.0+-FF269E?style=for-the-badge&link=https://statamic.com)
 
-Statamic 3 is the very latest and greatest version of Statamic, a uniquely powerful CMS built on [Laravel](https://laravel.com) and designed to make building and managing bespoke websites radically efficient and enjoyable.
+## Features
+- Multi-author blog with author pages
+- [Bard](https://statamic.dev/fieldtypes/bard) focused writing experience
+- Code highlighting with [prism.js](https://prismjs.com/)
+- Two personality modes: `casual` and `formal` to adapt to your personal style
+- Customizable social links and icons
+- Configurable static newsletter sign up form on blog pages
+- Pre-configured, native search
+- Automatic image resizing with Glide
+- Beautifully responsive
+- [Static Site Generator](https://github.com/statamic/ssg) ready
+- Built with [TailwindCSS](https://tailwindcss.com)
+- Itty bitty [Alpine.js](https://github.com/alpinejs/alpine) for interactions
+- :100:/:100:/:100:/:100: Lighthouse score
 
-It's important to note that while this repo is open and we welcome your feedback and contributions, Statamic is not FOSS (Free and Open Source Software). Please review our [contritubtion guidelines][contribution] guidelines for more details!
+## Screenshots
 
-> **Note:** This repository contains the code for the Statamic application. To contribute to the core package, visit the [Statamic core package repository][app-repo].
+| Casual  | Formal  |
+|---|---|
+| ![Casual Screenshot](https://github.com/statamic/starter-kit-starters-creek/raw/master/screenshot-casual.jpg)  |  ![Formal Screenshot](https://github.com/statamic/starter-kit-starters-creek/raw/master/screenshot-formal.jpg) |
 
+## Quick Start
 
-## Open Beta
+**1. Create a new site** cloning the repo and removing the origin repo.
 
-Statamic 3 is now in **open beta!** We welcome you try it out, [read the docs](https://statamic.dev), experiment, send [bug reports][contribution], provide thoughtful feedback, and otherwise do anything you feel will make the platform better and more stable for launch.
+```
+git clone git@github.com:statamic/starter-kit-starters-creek.git blog-site
+cd blog-site
+rm -rf .git
+composer install
+cp .env.example .env && php artisan key:generate
+```
 
-If this is your first experience with Statamic, please reserve your final judgement until we're out of beta. We've built a solid and flexible foundation and most bugs and rough edges should be minor efforts to address.
+**2. Make a new user** – you'll want it to be a `super` so you have access to everything.
 
+```
+php please make:user
+```
 
-### Not for Production Use
+**3. Recompile the CSS** (optional)
 
-**Statamic 3 Beta is NOT intended for production use.** You may encounter show-stopping bugs. Features may be removed last minute. There may still be **breaking changes** resulting in tedious manual labor and refactoring on _your_ end to get back in sync with master.
+The [TailwindCSS](https://tailwindcss.com/) included in this kit is compiled with [PurgeCSS](https://purgecss.com/) to reduce filesize on any unused classes and selectors. If you want to modify anything, just recompile it.
 
-So when you're tempted to launch that site you built anyway even after reading this warning, just remember &mdash; we told you not to do it and we still love you. :heart:
+```
+npm i && npm run dev
+```
 
+To compile for production again:
 
-### Pricing, Editions, and Features
+```
+npm run production
+```
 
-**Statamic is commercial, paid software** (Statamic v2 is $199/site). During the beta you're welcome to use Statamic as much as you'd like in development for free. Start new projects, upgrade your v2 sites, build addons, try dropping it into existing Laravel apps, and so on. When we launch Statamic 3 all you'll need to do is buy or upgrade the appropriate license and be on your way.
+**4. Do your thing!**
 
-After the beta there may be changes to pricing, new or different editions, and other changes to how the features and capabilities are organized. But since you're not going to use Statamic 3 Beta in production it shouldn't be much an issue, right? :blush:
-
-
-## Learning Statamic
-
-Statamic 3 has extensive (in progress) [documentation][docs]. We dedicate a significant amount of time and energy every day to improving them, so if something is unclear, wait a day or two and check back again. If it's still confusing, feel free to open an issue or chat with us on [Discord][discord] about it!
-
-
-## Support & Feedback
-
-We aren't able to provide "official support" for Statamic 3 in the way we do for Statamic 2. This is a beta, after all. We prefer to think of this phase as a collaborative process. And while we **do not** recommend using Statamic 3 in production, we **do** want to know about any issues you run into, any aspects that are confusing, and anything that is horribly broken. Please review the [contribution guide][contribution] before opening issues or pull requests. Thanks!
-
-
-### Discord
-
-Our [#v3 channel][discord] is the best place to casually chat with us and other developers about the Statamic 3 beta.
-
+If you're using [Laravel Valet](https://laravel.com/docs/valet) (or similar), your site should be available at `http://blog-site.test`. You can access the control panel at `http://blog-site.test/cp` and login with your new user. Open up the source code, follow along with the [Statamic 3 docs](https://statamic.dev), and enjoy!
 
 ## Contributing
 
-Thank you for considering contributing to Statamic! Please review the [contribution guide][contribution] before you open issues or send pull requests.
-
-
-## Code of Conduct
-
-In order to ensure that the Statamic community is welcoming to all and generally a rad place to belong, please review and abide by the [Code of Conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).
-
-
-## Important Links
-
-- [Statamic 3 Documentation][docs]
-- [Statamic 3 Application Repo][app-repo]
-- [Statamic 3 Migrator](https://github.com/statamic/migrator)
-- [Statamic 3 Development Blog](https://v3.statamic.com)
-- [Statamic Discord][discord]
-
-[docs]: https://statamic.dev/
-[discord]: https://statamic.com/discord
-[contribution]: https://github.com/statamic/cms/blob/master/CONTRIBUTING.md
-[app-repo]: https://github.com/statamic/statamic
+Contributions are always welcome, no matter how large or small. Before contributing, please read the [code of conduct](https://github.com/statamic/cms/wiki/Code-of-Conduct).

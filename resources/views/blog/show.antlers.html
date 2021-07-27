@@ -1,62 +1,62 @@
-<div class="md:flex">
-    <div class="w-full md:w-3/4 mx-auto px-4">
-        <h1 class="text-4xl verveine leading-6 mb-4">{{ title }}</h1>
+<article class="max-w-5xl px-3 mx-auto">
+    <header class="max-w-3xl mx-auto text-center">
+        <h1 class="heading">{{ title }}</h1>
+        {{ intro }}
+        <div class="flex items-center justify-center my-12">
+            {{ if author }}
+            <img src="{{ author:avatar ?? author:email | gravatar:160 }}" class="w-20 h-20 my-0 mr-4 rounded-full">
+            {{ /if }}
+            <div class="text-left">
+                {{ if author }}
+                <div>
+                    <a class="font-bold no-underline" href="/authors/{{ author:handle }}">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                            {{ author:name }}
+                        </span>
+                    </a>
+                </div>
+                {{ /if }}
+                <time datetime="{{ date format="Y-m-d" }}">{{ date }}</time>
+            </div>
+        </div>
+    </header>
+    <img class="rounded-xl" src="{{ hero_image }}" alt="{{ hero_image:alt }}">
+    <section class="max-w-3xl py-6 mx-auto prose dark:prose-light lg:py-12">
+        {{ partial:bard :bard_field="main_content"}}
+    </section>
 
-        <p class="text-purple-800 italic text-sm mb-8">Written by {{ author }} {{ name }} {{ /author }} on {{ date }}</p>
+    {{ if settings:show_signup }}
+        {{ partial:sign-up}}
+    {{ /if }}
 
-        <article>
-            {{ partial src="bard" }}
-        </article>
-
-        <div class="mt-8 border-t border-gray-200 pt-4">
+    <section class="grid max-w-3xl grid-cols-1 gap-6 py-6 mx-auto lg:py-12 md:grid-cols-2">
             {{ collection:previous limit="1" as="posts" }}
             <div class="mb-4">
-                <h2 class="text-xl verveine leading-6 mb-4">Previous Post</h2>
+                <h2 class="mb-4 text-xl leading-6">Previous Post</h2>
                 {{ if no_results }}
                 <p>Aww, there are no previous posts.</p>
                 {{ /if }}
 
                 {{ posts }}
-                {{ partial:blog/small }}
+                {{ partial:blog/card oversized="false" }}
                 {{ /posts }}
             </div>
             {{ /collection:previous }}
 
             {{ collection:next limit="1" as="posts" }}
             <div class="mb-4">
-                <h2 class="text-xl verveine leading-6 mb-4">Next Post</h2>
+                <h2 class="mb-4 text-xl leading-6">Next Post</h2>
                 {{ if no_results }}
                 <img src="https://media.giphy.com/media/lD76yTC5zxZPG/giphy.gif" alt="That's all folks Looney Toons gif"
                     class="mx-auto rounded-lg shadow">
-                <p class="text-sm text-center mt-1 text-purple-800 italic"><a
+                <p class="mt-1 text-sm italic text-center text-purple-800"><a
                         href="https://giphy.com/gifs/the-end-thats-all-folks-lD76yTC5zxZPG">via GIPHY</a></p>
                 {{ /if }}
 
                 {{ posts }}
-                {{ partial:blog/small }}
+                {{ partial:blog/card oversized="false" }}
                 {{ /posts }}
             </div>
             {{ /collection:next }}
-        </div>
-    </div>
-    <div class="hidden md:block md:w-1/4 px-8 mt-4">
-        <div class="mb-8">
-            <h2 class="text-3xl verveine leading-6 mb-4">Authors</h2>
-            {{ users }}
-            <a href="{{ url }}"
-                class="flex text-purple-600 items-center hover:bg-gray-100 transition ease-in-out duration-300 p-1 rounded-lg mb-1">
-                <img class="relative mr-4 inline-block h-8 w-8 rounded-full"
-                    src="/assets/{{ name | lower }}/{{ name | lower }}.jpg" alt="{{ name }}" />
-                {{ name }}
-            </a>
-            {{ /users }}
-        </div>
-
-        <div>
-            <h2 class="text-4xl verveine leading-6 mb-4">Topics</h2>
-            {{ taxonomy:topics }}
-            {{ partial:topics/small }}
-            {{ /taxonomy:topics }}
-        </div>
-    </div>
-</div>
+    </section>
+</article>

@@ -90,7 +90,7 @@ return [
     | Control Panel Thumbnail Restrictions
     |--------------------------------------------------------------------------
     |
-    | Thumbnails will not be genereated for any assets any larger (in either
+    | Thumbnails will not be generated for any assets any larger (in either
     | axis) than the values listed below. This helps prevent memory usage
     | issues out of the box. You may increase or decrease as necessary.
     |
@@ -108,7 +108,7 @@ return [
     |
     | Filetypes that cannot be rendered with HTML5 can opt into the Google Docs
     | Viewer. Google will get temporary access to these files so keep that in
-    | mind for any privacy implecations: https://policies.google.com/privacy
+    | mind for any privacy implications: https://policies.google.com/privacy
     |
     */
 
@@ -128,4 +128,16 @@ return [
 
     'cache_meta' => true,
 
+    /*
+    |--------------------------------------------------------------------------
+    | Focal Point Editor
+    |--------------------------------------------------------------------------
+    |
+    | When editing images in the Control Panel, there is an option to choose
+    | a focal point. When working with third-party image providers such as
+    | Cloudinary it can be useful to disable Statamic's built-in editor.
+    |
+    */
+
+    'focal_point_editor' => true,
 ];

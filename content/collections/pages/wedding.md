@@ -1,6 +1,8 @@
 ---
+id: 5766dcaf-f750-411d-9729-0f37c35ae2ea
+blueprint: pages
 title: Wedding
-bard:
+main_content:
   -
     type: paragraph
     content:
@@ -16,15 +18,6 @@ bard:
   -
     type: bullet_list
     content:
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: Newsletter
       -
         type: list_item
         content:
@@ -68,30 +61,6 @@ bard:
     content:
       -
         type: text
-        text: 'Newsletter:'
-  -
-    type: paragraph
-    content:
-      -
-        type: text
-        marks:
-          -
-            type: italic
-        text: 'To keep up to date on all changes and notifications, please join our newsletter:'
-  -
-    type: set
-    attrs:
-      enabled: false
-      values:
-        type: form
-        form: newsletter
-  -
-    type: heading
-    attrs:
-      level: 2
-    content:
-      -
-        type: text
         text: 'Location:'
   -
     type: paragraph
@@ -106,8 +75,9 @@ bard:
             type: link
             attrs:
               href: 'http://lincolnparkconservancy.org/projects/conservatory-garden/'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Lincoln Park Conservatory'
       -
         type: text
@@ -119,8 +89,9 @@ bard:
             type: link
             attrs:
               href: 'https://www.cpvino.com/'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Casati''s'
       -
         type: text
@@ -137,8 +108,8 @@ bard:
       values:
         type: images
         images:
-          - wedding/conservatory.jpg
-          - wedding/casatis.jpg
+          - nn-wedding/conservatory.jpg
+          - nn-wedding/casatis.jpg
         height: h-64
   -
     type: heading
@@ -161,8 +132,9 @@ bard:
             type: link
             attrs:
               href: 'https://www.claridgehousechicago.com/'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Claridge House'
   -
     type: paragraph
@@ -174,8 +146,9 @@ bard:
             type: link
             attrs:
               href: 'https://goo.gl/maps/XbB9G1bsPjRdmXu16'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: '1244 N Dearborn Pkwy'
   -
     type: paragraph
@@ -187,8 +160,9 @@ bard:
             type: link
             attrs:
               href: 'https://goo.gl/maps/XbB9G1bsPjRdmXu16'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Chicago, IL 60610'
   -
     type: paragraph
@@ -203,8 +177,9 @@ bard:
             type: link
             attrs:
               href: 'https://www.jdvhotels.com/hotels/illinois/chicago/hotel-lincoln?utm_source=google-local&utm_medium=organic&utm_campaign=gmb'
-              target: _blank
               rel: null
+              target: _blank
+              title: null
         text: 'Hotel Lincoln'
       -
         type: text
@@ -239,8 +214,9 @@ bard:
                     type: link
                     attrs:
                       href: 'https://www.honeyfund.com/wedding/newestnewhouse'
-                      target: _blank
                       rel: null
+                      target: _blank
+                      title: null
                 text: Honeyfund
   -
     type: paragraph
@@ -264,8 +240,9 @@ bard:
                     type: link
                     attrs:
                       href: 'http://www.checkedtwice.com/wishlist?occasion=@km87w3'
-                      target: _blank
                       rel: null
+                      target: _blank
+                      title: null
                 text: CheckedTwice
               -
                 type: text
@@ -283,8 +260,9 @@ bard:
                     type: link
                     attrs:
                       href: 'https://www.amazon.com/wedding/share/newestnewhouse'
-                      target: _blank
                       rel: null
+                      target: _blank
+                      title: null
                 text: Amazon
   -
     type: heading
@@ -452,15 +430,8 @@ bard:
                   -
                     type: text
                     text: 'Dinner at Casati''s starts'
-  -
-    type: heading
-    attrs:
-      level: 2
-  -
-    type: paragraph
-  -
-    type: paragraph
-updated_by: 5da1f170-0d70-4c70-9ff9-ea36a1df87b0
-updated_at: 1626763065
-id: cae9c5d0-260d-4c7d-a2a7-922e7f28e631
+hero_image: nn-heros/wedding.jpg
+updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
+updated_at: 1627419153
+template: default
 ---

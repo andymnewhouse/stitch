@@ -1,32 +1,35 @@
 <!doctype html>
-<html lang="{{ site_short_locale }}">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ title }} | {{ site_name }}</title>
-    <link rel="stylesheet" href="https://use.typekit.net/ltm2rvz.css">
-    <link href="{{ mix src='/css/site.css' }}" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-</head>
-
-<body>
-    {{ partial src="nav" }}
-    <!-- <nav class="py-4 px-12 flex justify-between items-center ">
-        <a href="/" class="text-2xl text-purple-700 uppercase verveine flex items-center">
-            {{ partial src="logo" }}
-            Newest Newhouse
-        </a>
-        <div>
-            {{ nav include_home="true" }}
-                <a href="{{ url }}" class="p-2 hover:text-purple-700 focus:text-purple-700 {{ if is_current || is_parent }}text-purple-500{{ /if }}">{{ title }}</a>
-            {{ /nav }}
-        </div>
-    </nav> -->
-    <main class="container mt-16 mb-32">
-        {{ template_content }}
-    </main>
-</body>
-
+<html lang="{{ site:short_locale }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{{ title }} — {{ settings:site_name }}</title>
+        <meta name="description" content="{{ intro | strip_tags | entities }}">
+        <script type="application/ld+json">
+            {
+              "@context": "https://schema.org/",
+              "@type": "blogPost",
+              "name": "{{ title }}",
+              "author": {
+                "@type": "Person",
+                "name": "{{ author:name }}"
+              },
+              "datePublished": "{{ date format="Y-m-d" }}",
+              "description": "{{ intro | strip_tags | entities }}",
+            }
+        </script>
+        <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
+        {{ partial:personality }}
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+        <script src="{{ mix src='/js/site.js' }}"></script>
+    </head>
+    <body class="bg-white dark:bg-gray-900 text-black dark:text-gray-200 font-body leading-normal personality-{{ settings:personality }}">
+        {{ partial:nav }}
+        <main class="py-12 lg:py-20">
+            {{ template_content }}
+        </main>
+        {{ partial:footer }}
+        {{ partial:extras }}
+    </body>
 </html>

@@ -1,0 +1,9 @@
+<div class="aspect-w-16 aspect-h-9">
+    {{ if video | is_embeddable }}
+        <iframe src="{{ video | embed_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {{ elseif video | contains:drive}}
+        <iframe src="{{ video | embed_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    {{ else }}
+        <video src="{{ video | embed_url }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></video>
+    {{ /if }}
+</div>

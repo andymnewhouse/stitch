@@ -1,55 +1,48 @@
-@tailwind base;
-
-@tailwind components;
-
-@tailwind utilities;
-
-.verveine {
-    font-family: verveine, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-p, ul, li {
-    @apply text-gray-800 leading-6 text-lg;
-}
-
-p:not(:last-child), ul {
-    @apply mb-4;
-}
-
-ul {
-    @apply list-disc ml-6;
-}
-
-li {
-    @apply mb-1;
-}
-
-a:not(.text-white) {
-    @apply text-purple-600;
-
-    &:hover {
-        @apply text-purple-700;
-    }
-
-    &:focus {
-        @apply text-purple-700 underline;
+.personality-casual {
+    .squiggle {
+        filter: url("#squiggle");
+        position: relative;
+        transform: translateZ(0);
     }
 }
 
-h1 {
-    @apply text-4xl verveine leading-6 mb-8;
-}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
 
-h2 {
-    @apply text-3xl verveine leading-6 mb-6 mt-8;
-}
+    .embed-responsive-item,
+    iframe,
+    embed,
+    object,
+    video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: 100%;
+      border: 0;
+    }
+  }
 
-h3 {
-    @apply text-2xl verveine leading-6 mb-4;
-}
+  .aspect-ratio-none {
+    padding-bottom: 0;
+  }
+  .aspect-ratio-square {
+    padding-bottom: 100%;
+  }
+  .aspect-ratio-16\/9 {
+    padding-bottom: 56.25%;
+  }
+  .aspect-ratio-4\/3 {
+    padding-bottom: 75%;
+  }
+  .aspect-ratio-21\/9 {
+    padding-bottom: 42.86%;
+  }
 
-h4 {
-    @apply text-xl verveine leading-6 mb-4;
-}
+[x-cloak] { display: none; }
+

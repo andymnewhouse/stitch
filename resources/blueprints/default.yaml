@@ -1,7 +1,0 @@
-title: Default
-sections:
-  main:
-    display: Main
-    fields:
-      -
-        import: bard

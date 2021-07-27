@@ -1,5 +1,13 @@
-<div class="w-full md:w-3/4 mx-auto px-4">
-    <h1 class="text-4xl verveine leading-6 mb-4">{{ title }}</h1>
+<div class="max-w-5xl px-3 mx-auto">
+    <header class="max-w-3xl mx-auto text-center">
+        <h1 class="heading">{{ title }}</h1>
+    </header>
+    <img class="rounded-xl" src="{{ hero_image }}" alt="{{ hero_image:alt }}">
+    <section class="max-w-3xl py-6 mx-auto prose dark:prose-light lg:py-12">
+        {{ partial:bard :bard_field="main_content"}}
+    </section>
 
-    {{ partial src="bard" }}
+    {{ if settings:show_signup }}
+        {{ partial:sign-up}}
+    {{ /if }}
 </div>
