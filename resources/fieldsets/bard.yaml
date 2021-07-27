@@ -62,6 +62,17 @@ fields:
                 localizable: false
                 listable: hidden
                 display: Video
+        form:
+          display: Form
+          fields:
+            -
+              handle: form
+              field:
+                max_items: 1
+                type: form
+                localizable: false
+                listable: hidden
+                display: Form
       buttons:
         - h1
         - h2
