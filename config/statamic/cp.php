@@ -38,7 +38,19 @@ return [
     */
 
     'widgets' => [
-        'getting_started',
+        [
+            'type' => 'form',
+            'form' => 'newsletter', // name of your form
+            'fields' => ['email'], // the fields you want to display in the widget
+            'width' => 50,
+            'limit' => 10
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'blog',
+            'width' => 50,
+            'limit' => 10,
+        ],
     ],
 
     /*
@@ -73,7 +85,7 @@ return [
     |
     */
 
-    'link_to_docs' => env('STATAMIC_LINK_TO_DOCS', true),
+    'link_to_docs' => env('STATAMIC_LINK_TO_DOCS', false),
 
     /*
     |--------------------------------------------------------------------------
