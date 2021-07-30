@@ -1,4 +1,8 @@
 title: Blog
+sites:
+  - newestnewhouse
+  - andymnewhouse
+  - jessnewhouse
 template: blog/show
 layout: layout
 mount: home

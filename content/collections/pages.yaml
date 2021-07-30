@@ -1,4 +1,8 @@
 title: Pages
+sites:
+  - newestnewhouse
+  - andymnewhouse
+  - jessnewhouse
 revisions: false
 route: '{parent_uri}/{slug}'
 structure:

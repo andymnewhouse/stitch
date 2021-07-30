@@ -15,11 +15,25 @@ return [
 
     'sites' => [
 
-        'default' => [
-            'name' => config('app.name'),
+        'newestnewhouse' => [
+            'name' => 'Newest Newhouse',
             'locale' => 'en_US',
-            'url' => '/',
+            'url' => env('NN_URL'),
         ],
+
+        'andymnewhouse' => [
+            'name' => 'Andy',
+            'locale' => 'en_US',
+            'url' => env('ANDY_URL'),
+        ],
+
+        'jessnewhouse' => [
+            'name' => 'Jess',
+            'locale' => 'en_US',
+            'url' => env('JESS_URL'),
+        ],
+
+
 
     ],
 ];

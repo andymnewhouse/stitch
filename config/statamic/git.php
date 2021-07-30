@@ -99,6 +99,8 @@ return [
         resource_path('users'),
         storage_path('forms'),
         public_path('assets'),
+        base_path('composer.json'),
+        base_path('composer.lock'),
     ],
 
     /*
