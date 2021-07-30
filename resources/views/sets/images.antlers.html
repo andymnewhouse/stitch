@@ -1,5 +1,5 @@
 {{ images }}
     <figure>
-        <img src="{{ url }}" class="mx-auto rounded-md" alt="{{ alt }}" />
+        <img src="{{ url }}" class="{{ if floating }}{{ float_direction }}{{ else }}mx-auto{{ /if }} rounded-md" alt="{{ alt }}" />
     </figure>
 {{ /images }}

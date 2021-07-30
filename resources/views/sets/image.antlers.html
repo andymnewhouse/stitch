@@ -1,4 +1,4 @@
 <figure>
-    <img src="{{ image }}" class="mx-auto rounded-md" alt="{{ caption ?? image:alt }}" />
+    <img src="{{ image }}" class="{{ if floating }}{{ float_direction }}{{ else }}mx-auto{{ /if }} {{ width }} rounded-md" alt="{{ caption ?? image:alt }}" />
     <figcaption>{{ caption }}</figcaption>
 </figure>

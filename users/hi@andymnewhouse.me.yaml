@@ -8,3 +8,6 @@ preferences:
   collections:
     blog:
       after_save: continue_editing
+  taxonomies:
+    category:
+      after_save: create_another

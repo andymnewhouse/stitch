@@ -84,6 +84,54 @@ sections:
                     type: assets
                     icon: assets
                     listable: hidden
+                -
+                  handle: floating
+                  field:
+                    default: false
+                    display: Floating
+                    type: toggle
+                    icon: toggle
+                    width: 33
+                    listable: hidden
+                -
+                  handle: float_direction
+                  field:
+                    options:
+                      'md:float-left pl-4 pb-4': Left
+                      'md:float-right pr-4 pb-4': Right
+                    multiple: false
+                    max_items: 1
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: 'Float Direction'
+                    type: select
+                    icon: select
+                    width: 50
+                    listable: hidden
+                    if:
+                      floating: 'equals true'
+                -
+                  handle: width
+                  field:
+                    options:
+                      w-1/2: 1/2
+                      w-1/4: 1/4
+                      w-1/3: 1/3
+                      w-1/5: 1/5
+                    multiple: false
+                    max_items: 1
+                    clearable: false
+                    searchable: true
+                    taggable: false
+                    push_tags: false
+                    cast_booleans: false
+                    display: Width
+                    type: select
+                    icon: select
+                    listable: hidden
             video:
               display: Video
               fields:

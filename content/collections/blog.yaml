@@ -6,6 +6,8 @@ sites:
 template: blog/show
 layout: layout
 mount: home
+taxonomies:
+  - category
 revisions: false
 route: '/{slug}'
 date: true
