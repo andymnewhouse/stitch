@@ -33,7 +33,11 @@ return [
             'url' => env('JESS_URL'),
         ],
 
-
+        'printing' => [
+            'name' => 'Newhouse Printing',
+            'locale' => 'en_US',
+            'url' => env('NN_URL') . '/3d-printing/',
+        ],
 
     ],
 ];
