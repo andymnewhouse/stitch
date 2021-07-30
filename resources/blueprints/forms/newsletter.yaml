@@ -14,3 +14,12 @@ sections:
           validate:
             - required
             - email
+      -
+        handle: site
+        field:
+          input_type: hidden
+          antlers: false
+          display: Site
+          type: text
+          icon: text
+          listable: true

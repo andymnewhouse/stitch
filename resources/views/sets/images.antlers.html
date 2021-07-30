@@ -1,5 +1,25 @@
-{{ images }}
-    <figure>
-        <img src="{{ url }}" class="{{ if floating }}{{ float_direction }}{{ else }}mx-auto{{ /if }} rounded-md" alt="{{ alt }}" />
-    </figure>
-{{ /images }}
+{{ if style === 'gallery' }}
+    {{ if lightbox }}
+    <div class="grid grid-cols-1 gap-8 -mx-8 md:grid-cols-2 {{ if images > 2 }}lg:grid-cols-3{{ /if }}">
+        {{ images }}
+            <a class="h-64 bg-center bg-cover rounded-lg shadow glightbox" data-gallery="gallery" href="{{ url }}" style="background-image: url({{ url }})">
+                <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
+            </a>
+        {{ /images }}
+    </div>
+    {{ else }}
+    <div class="grid grid-cols-1 gap-8 -mx-8 md:grid-cols-2 {{ if images > 2 }}lg:grid-cols-3{{ /if }}">
+        {{ images }}
+            <div class="{{ if images > 0 }}h-64{{ /if }} bg-center bg-cover rounded-lg shadow" style="background-image: url({{ url }})">
+                <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
+            </div>
+        {{ /images }}
+    </div>
+    {{ /if }}
+{{ else }}
+    {{ images }}
+        <figure>
+            <img src="{{ url }}" class="{{ if floating }}{{ float_direction }}{{ else }}mx-auto{{ /if }} rounded-md" alt="{{ alt }}" />
+        </figure>
+    {{ /images }}
+{{ /if }}

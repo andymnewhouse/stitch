@@ -19,10 +19,9 @@
               "description": "{{ intro | strip_tags | entities }}",
             }
         </script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
         <link rel="stylesheet" href="{{ mix src='css/tailwind.css' }}">
         {{ partial:personality }}
-        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-        <script src="{{ mix src='/js/site.js' }}"></script>
     </head>
     <body class="bg-white dark:bg-gray-900 text-black dark:text-gray-200 font-body leading-normal personality-{{ settings:personality }}">
         {{ partial:nav }}
@@ -31,5 +30,8 @@
         </main>
         {{ partial:footer }}
         {{ partial:extras }}
+
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
+        <script src="{{ mix src='/js/site.js' }}"></script>
     </body>
 </html>
