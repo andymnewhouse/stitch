@@ -129,6 +129,7 @@ return [
         'git add composer.json',
         'git add composer.lock',
         'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
+        'git push',
     ],
 
     /*
