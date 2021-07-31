@@ -1,1 +1,12 @@
-{  }
+site_name: 'Andy M. Newhouse'
+personality: formal
+show_signup: true
+social:
+  -
+    name: Twitter
+    url: 'https://twitter.com/andymnewhouse'
+    icon: site/social-icons/twitter.svg
+  -
+    name: Github
+    url: 'https://github.com/andymnewhouse'
+    icon: site/social-icons/github.svg
