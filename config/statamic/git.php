@@ -75,7 +75,7 @@ return [
 
     'user' => [
         'name' => env('STATAMIC_GIT_USER_NAME', 'Spock'),
-        'email' => env('STATAMIC_GIT_USER_EMAIL', 'spock@example.com'),
+        'email' => env('STATAMIC_GIT_USER_EMAIL', 'spock@newestnewhouse.com'),
     ],
 
     /*
@@ -99,8 +99,6 @@ return [
         resource_path('users'),
         storage_path('forms'),
         public_path('assets'),
-        base_path('composer.json'),
-        base_path('composer.lock'),
     ],
 
     /*
@@ -128,6 +126,8 @@ return [
 
     'commands' => [
         'git add {{ paths }}',
+        'git add composer.json',
+        'git add composer.lock',
         'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
     ],
 
