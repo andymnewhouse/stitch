@@ -95,7 +95,7 @@ main_content:
         text: 'Casati''s'
       -
         type: text
-        text: '. A shuttle will be provided for our guests. '
+        text: '. A shuttle will be provided for our guests to and from dinner. '
   -
     type: paragraph
     content:
@@ -111,6 +111,8 @@ main_content:
           - nn-wedding/conservatory.jpg
           - nn-wedding/casatis.jpg
         height: h-64
+        style: gallery
+        lightbox: false
   -
     type: heading
     attrs:
@@ -432,6 +434,6 @@ main_content:
                     text: 'Dinner at Casati''s starts'
 hero_image: nn-heros/wedding.jpg
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1627419153
+updated_at: 1627740069
 template: default
 ---
