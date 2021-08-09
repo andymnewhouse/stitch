@@ -126,13 +126,71 @@ main_content:
     content:
       -
         type: text
+        marks:
+          -
+            type: italic
+        text: 'Near the Conservatory '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
         text: 'Parking is available for $28 a day in the lot directly behind the Conservatory at 2391 N Stockton Dr. The lot entrance is on Stockton Dr just south of Fullerton Pkwy. '
   -
     type: paragraph
     content:
       -
         type: text
-        text: 'Street parking may also be available on Stockton or Cannon Drives between Diversey and Fullerton Parkways. However, we anticipate that the street parking may fill quickly from our guests! '
+        text: 'Street parking may also be available on Stockton or Cannon Drives between Diversey and Fullerton Parkways. However, we anticipate that the street parking may fill quickly from our guests! You can also use a service like SpotHero to help you find parking.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: italic
+        text: 'Near Claridge Hotel'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Vallet parking is offered by Claridge Hotel for a fee. They use '
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: 'https://www.lazparking.com/touchless/claridge-house-chicago'
+              rel: null
+              target: null
+              title: null
+        text: LazParking
+      -
+        type: text
+        text: ' to reserve parking spots. There is some street parking, but it is difficult to find for overnight parking.'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'The nearest parking garage is'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        marks:
+          -
+            type: link
+            attrs:
+              href: '1250 North Dearborn Public Parking - ParkChirp (312) 988-7863 https://maps.app.goo.gl/UZpe6jbAyZ5PMLKdA'
+              rel: null
+              target: null
+              title: null
+        text: '1250 N Dearborn Pkwy, Chicago, IL 60610'
   -
     type: heading
     attrs:
@@ -454,6 +512,6 @@ main_content:
                     text: 'Dinner at Casati''s starts'
 hero_image: nn-heros/wedding.jpg
 updated_by: 3389ccfe-c2db-480d-aa93-2e4f80548e17
-updated_at: 1628530141
+updated_at: 1628531571
 template: default
 ---
