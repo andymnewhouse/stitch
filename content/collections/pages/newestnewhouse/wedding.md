@@ -120,6 +120,26 @@ main_content:
     content:
       -
         type: text
+        text: 'Parking:'
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Parking is available for $28 a day in the lot directly behind the Conservatory at 2391 N Stockton Dr. The lot entrance is on Stockton Dr just south of Fullerton Pkwy. '
+  -
+    type: paragraph
+    content:
+      -
+        type: text
+        text: 'Street parking may also be available on Stockton or Cannon Drives between Diversey and Fullerton Parkways. However, we anticipate that the street parking may fill quickly from our guests! '
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
         text: 'Accommodations:'
   -
     type: paragraph
@@ -433,7 +453,7 @@ main_content:
                     type: text
                     text: 'Dinner at Casati''s starts'
 hero_image: nn-heros/wedding.jpg
-updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1627740069
+updated_by: 3389ccfe-c2db-480d-aa93-2e4f80548e17
+updated_at: 1628530141
 template: default
 ---
