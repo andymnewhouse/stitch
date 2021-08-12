@@ -10,51 +10,6 @@ main_content:
         type: text
         text: 'Due to our desire to keep everyone safe during this pandemic, our wedding celebration has been rescheduled for Saturday, August 14th, 2021.'
   -
-    type: paragraph
-    content:
-      -
-        type: text
-        text: 'Table of Contents:'
-  -
-    type: bullet_list
-    content:
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: Location
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: Accommodations
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: Registries
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: Schedule
-  -
     type: heading
     attrs:
       level: 2
@@ -512,6 +467,6 @@ main_content:
                     text: 'Dinner at Casati''s starts'
 hero_image: nn-heros/wedding.jpg
 updated_by: 3389ccfe-c2db-480d-aa93-2e4f80548e17
-updated_at: 1628531571
+updated_at: 1628728402
 template: default
 ---
