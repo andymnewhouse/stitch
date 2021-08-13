@@ -524,6 +524,9 @@ main_content:
                 content:
                   -
                     type: text
+                    marks:
+                      -
+                        type: bold
                     text: Time
           -
             type: table_cell
@@ -538,6 +541,9 @@ main_content:
                 content:
                   -
                     type: text
+                    marks:
+                      -
+                        type: bold
                     text: Location
       -
         type: table_row
@@ -666,9 +672,9 @@ main_content:
                 content:
                   -
                     type: text
-                    text: 'From Casati''s, stop at Lincoln Park Conservatory, to Claridge Hotel'
+                    text: 'From Casati''s, Stop at Lincoln Park Conservatory, to Claridge Hotel'
 hero_image: nn-heros/wedding.jpg
 updated_by: 3389ccfe-c2db-480d-aa93-2e4f80548e17
-updated_at: 1628879453
+updated_at: 1628879620
 template: default
 ---
