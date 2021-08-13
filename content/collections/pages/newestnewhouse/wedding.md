@@ -357,7 +357,7 @@ main_content:
                 content:
                   -
                     type: text
-                    text: '5:00 pm'
+                    text: '5:00 PM'
           -
             type: table_cell
             attrs:
@@ -388,7 +388,7 @@ main_content:
                 content:
                   -
                     type: text
-                    text: '5:45 pm'
+                    text: '5:45 PM'
           -
             type: table_cell
             attrs:
@@ -419,7 +419,7 @@ main_content:
                 content:
                   -
                     type: text
-                    text: '6:00 pm'
+                    text: '6:00 PM'
           -
             type: table_cell
             attrs:
@@ -450,7 +450,7 @@ main_content:
                 content:
                   -
                     type: text
-                    text: '7:00 pm'
+                    text: '7:00 PM'
           -
             type: table_cell
             attrs:
@@ -465,8 +465,210 @@ main_content:
                   -
                     type: text
                     text: 'Dinner at Casati''s starts'
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '9:00 PM'
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Start Saying Goodbyes'
+  -
+    type: heading
+    attrs:
+      level: 2
+    content:
+      -
+        type: text
+        text: 'Shuttle:'
+  -
+    type: table
+    content:
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth:
+                - 397
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: Time
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: Location
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth:
+                - 397
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '6:30 PM'
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'From Lincoln Park Conservatory to Casati''s'
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth:
+                - 397
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '6:45 PM'
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'From Lincoln Park Conservatory to Casati''s'
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth:
+                - 397
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '9:15 PM'
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'From Casati''s to Lincoln Park Conservatory'
+      -
+        type: table_row
+        content:
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth:
+                - 397
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: '9:30 PM'
+          -
+            type: table_cell
+            attrs:
+              colspan: 1
+              rowspan: 1
+              colwidth: null
+              background: null
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'From Casati''s, stop at Lincoln Park Conservatory, to Claridge Hotel'
 hero_image: nn-heros/wedding.jpg
 updated_by: 3389ccfe-c2db-480d-aa93-2e4f80548e17
-updated_at: 1628728402
+updated_at: 1628879453
 template: default
 ---
