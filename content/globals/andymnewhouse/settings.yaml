@@ -1,6 +1,6 @@
 site_name: 'Andy M. Newhouse'
 personality: formal
-show_signup: true
+show_signup: false
 social:
   -
     name: Email
