@@ -2,4 +2,136 @@ title: Resume
 sections:
   main:
     display: Main
-    fields: {  }
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: foreward
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Foreward
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+      -
+        handle: jobs
+        field:
+          collapse: false
+          sets:
+            job:
+              display: Job
+              fields:
+                -
+                  handle: start
+                  field:
+                    mode: single
+                    time_enabled: false
+                    time_required: false
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: Start
+                    type: date
+                    icon: date
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: end
+                  field:
+                    mode: single
+                    time_enabled: false
+                    time_required: false
+                    full_width: false
+                    inline: false
+                    columns: 1
+                    rows: 1
+                    display: End
+                    type: date
+                    icon: date
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: title
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Title
+                    type: text
+                    icon: text
+                    listable: hidden
+                    instructions_position: above
+                -
+                  handle: description
+                  field:
+                    restrict: false
+                    automatic_line_breaks: true
+                    automatic_links: false
+                    escape_markup: false
+                    smartypants: false
+                    antlers: false
+                    display: Description
+                    type: markdown
+                    icon: markdown
+                    listable: hidden
+                    instructions_position: above
+          display: Jobs
+          type: replicator
+          icon: replicator
+          listable: hidden
+          instructions_position: above
+      -
+        handle: skills
+        field:
+          display: Skills
+          type: list
+          icon: list
+          listable: hidden
+          instructions_position: above
+      -
+        handle: education
+        field:
+          restrict: false
+          automatic_line_breaks: true
+          automatic_links: false
+          escape_markup: false
+          smartypants: false
+          antlers: false
+          display: Education
+          type: markdown
+          icon: markdown
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          localizable: true
+          validate:
+            - required
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - pages
+          max_items: 1
+          listable: false
+          localizable: true
