@@ -9,9 +9,28 @@ jobs:
     description: 'Managed all IT and web properties for Acoustica and Cherry Audio. Created a store from the ground up for Cherry Audio.'
     type: job
     enabled: true
+    company: Acoustica
   -
-    start: '2021-11-06'
-    title: 'Web Developer'
+    start: '2016-02-14'
+    title: 'Director of Technology'
+    company: 'Midwest Institute for Sexuality and Gender Diversity'
+    description: 'A volunteer position where I help manage all IT and web properties the Institue and our various programs including MBLGTACC.'
+    type: job
+    enabled: true
+  -
+    start: '2016-09-01'
+    title: 'IT Support & Web Developer'
+    type: job
+    enabled: true
+    end: '2017-09-08'
+    company: 'Phuel Strategies'
+    description: 'Created WordPress sites for various clients. On-call IT person for our clients in the city of Chicago and suburby. Helped re-brand the company when switching from IT focused to a full service agency.'
+  -
+    start: '2016-01-01'
+    end: '2021-09-01'
+    title: Owner
+    company: 'Swick Solution'
+    description: 'Started my own web consulting business, and quickly realized I wasn''t ready for that adventure. I learned a lot more Laravel, design, and photography during this time.'
     type: job
     enabled: true
   -
@@ -31,15 +50,17 @@ jobs:
 skills:
   - Laravel
   - Statamic
+  - Livewire
   - AlpineJS
   - VueJS
   - Slack
   - 'Office applications'
   - 'Solving Rubiks cubes'
   - 'Drinking Diet Coke'
+  - 'Playing Clarinet'
 education: |-
   2011-2015 Illinois Stata University
   Bachelor of Science - IT Web Application Development
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636216722
+updated_at: 1636217396
 ---
