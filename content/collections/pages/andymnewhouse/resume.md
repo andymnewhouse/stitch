@@ -24,20 +24,20 @@ jobs:
     enabled: true
     end: '2017-09-08'
     company: 'Phuel Strategies'
-    description: 'Created WordPress sites for various clients. On-call IT person for our clients in the city of Chicago and suburby. Helped re-brand the company when switching from IT focused to a full service agency.'
+    description: 'Assists a variety of organizations with technology and marketing support. In addition to being available to clients for technology assistance. Tasked with developing new web sites and web applications for small businesses, non-profit organizations and individuals. Designs logos, social media ads, infographics, newsletters, and a variety of other marketing materials.'
   -
     start: '2016-01-01'
     end: '2021-09-01'
     title: Owner
     company: 'Swick Solution'
-    description: 'Started my own web consulting business, and quickly realized I wasn''t ready for that adventure. I learned a lot more Laravel, design, and photography during this time.'
+    description: 'Develop web sites and web applications for small businesses, non-profit organizations and individuals. Design logos, social media ads, infographics, newsletters, etc. Advise clients on how to begin creating a online/social media presence. Selected Clients: Rickardo Andre Lewis Art, Julianne Q Music, and Tau Beta Sigma – Zeta Alpha'
     type: job
     enabled: true
   -
     start: '2015-06-15'
     end: '2016-06-15'
     title: 'Junior Web Developer'
-    description: 'Assisted with the migration of the existing web applications to Laravel. Created various landing pages for the marketing team.'
+    description: 'Team member tasked with redesigning the flagship rewards application from the ground up utilizing MVC ideology, a REST api, and a new content management system. Helped integrate a Classic ASP application into the flagship application. In charge of redesigning internal applications. Maintain old applications and build systems.'
     type: job
     enabled: true
   -
@@ -62,6 +62,6 @@ education: |-
   2011-2015 Illinois Stata University
   Bachelor of Science - IT Web Application Development
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636217642
+updated_at: 1636221454
 template: templates/resume
 ---
