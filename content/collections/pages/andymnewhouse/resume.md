@@ -62,5 +62,6 @@ education: |-
   2011-2015 Illinois Stata University
   Bachelor of Science - IT Web Application Development
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636217396
+updated_at: 1636217642
+template: templates/resume
 ---
