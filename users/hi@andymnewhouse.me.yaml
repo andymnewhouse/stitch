@@ -7,7 +7,7 @@ password_hash: $2y$10$q5rb1VOM05baq8ypFCuFSe1v/iHDf0Vq.mw4bsS90hm56l7iJROpa
 preferences:
   collections:
     blog:
-      after_save: continue_editing
+      after_save: create_another
   taxonomies:
     category:
       after_save: create_another
