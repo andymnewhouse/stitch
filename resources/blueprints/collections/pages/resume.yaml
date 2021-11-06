@@ -74,6 +74,18 @@ sections:
                     icon: text
                     listable: hidden
                     instructions_position: above
+                    width: 50
+                -
+                  handle: company
+                  field:
+                    input_type: text
+                    antlers: false
+                    display: Company
+                    type: text
+                    icon: text
+                    width: 50
+                    listable: hidden
+                    instructions_position: above
                 -
                   handle: description
                   field:
