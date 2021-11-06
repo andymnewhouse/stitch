@@ -37,6 +37,9 @@ module.exports = {
         '8xl': '6rem',
         '9xl': '7rem',
       },
+      screens: {
+        'print': {'raw': 'print'},
+      },
       typography: (theme) => ({
         light: {
           css: [

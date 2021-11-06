@@ -24,10 +24,12 @@
         {{ partial:personality }}
     </head>
     <body class="bg-white dark:bg-gray-900 text-black dark:text-gray-200 font-body leading-normal personality-{{ settings:personality }}">
-        {{ partial:nav }}
+        {{ partial:layout.nav :site="site" }}
+
         <main class="py-12 lg:py-20">
             {{ template_content }}
         </main>
+
         {{ partial:footer }}
         {{ partial:extras }}
 
