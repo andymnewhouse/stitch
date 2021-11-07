@@ -40,6 +40,7 @@ jobs:
     description: 'Team member tasked with redesigning the flagship rewards application from the ground up utilizing MVC ideology, a REST api, and a new content management system. Helped integrate a Classic ASP application into the flagship application. In charge of redesigning internal applications. Maintain old applications and build systems.'
     type: job
     enabled: true
+    company: 'Augeo Marketing'
   -
     start: '2014-01-15'
     end: '2015-06-12'
@@ -47,6 +48,7 @@ jobs:
     description: 'Managed and created CodeIgniter applications for various groups in the Student Affairs division. Notable projects include: Volunteer Management, Event Management, Registration Management.'
     type: job
     enabled: true
+    company: 'Student Affairs IT - Illinois State University'
 skills:
   - Laravel
   - Statamic
@@ -59,9 +61,9 @@ skills:
   - 'Drinking Diet Coke'
   - 'Playing Clarinet'
 education: |-
-  2011-2015 Illinois Stata University
+  2011-2015 Illinois State University
   Bachelor of Science - IT Web Application Development
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636221454
+updated_at: 1636245521
 template: templates/resume
 ---
