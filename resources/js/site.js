@@ -2,10 +2,18 @@
 
 require('./prism.js')
 
-console.log('loaded');
 import GLightbox from 'glightbox';
 
 const lightbox = GLightbox({
-    touchNavigation: true,
+    touchNavigation: false,
     loop: true,
 });
+
+import Alpine from 'alpinejs'
+import intersect from '@alpinejs/intersect'
+
+Alpine.plugin(intersect)
+
+window.Alpine = Alpine
+
+Alpine.start()

@@ -5,8 +5,18 @@
 
     <section class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
         {{ assets container="assets" scope="image" folder="{folder}" }}
-        <a class="overflow-hidden rounded-lg shadow-lg glightbox" data-gallery="gallery" href="{{ image.url }}">
-            <img src='{{ glide :src="image.url" fit="crop_focal" height="570" width="736" }}' alt="{{ image.alt }}" class="object-cover w-full h-64" />
+        <a class="overflow-hidden rounded-lg shadow-lg glightbox"
+             data-gallery="gallery"
+             href="{{ image.url }}"
+             x-data="{ shown: {{ index < 12 ? 'true' : 'false' }} }"
+             x-intersect.once="shown = true"
+        >
+            <img x-show="shown" x-transition
+                src='{{ glide :src="image.url" fit="crop_focal" height="570" width="736" }}'
+                alt="{{ image.alt }}"
+                class="object-cover w-full h-64"
+                loading="lazy"
+            />
         </a>
         {{ /assets }}
     </section>
