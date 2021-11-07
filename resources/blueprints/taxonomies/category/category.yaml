@@ -1,0 +1,51 @@
+title: Category
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: title
+        field:
+          type: text
+          required: true
+          validate:
+            - required
+      -
+        handle: content
+        field:
+          type: markdown
+          localizable: true
+      -
+        handle: icon
+        field:
+          mode: list
+          container: assets
+          restrict: false
+          allow_uploads: false
+          show_filename: true
+          max_files: 1
+          display: Icon
+          type: assets
+          icon: assets
+          listable: hidden
+          instructions_position: above
+      -
+        handle: gradient
+        field:
+          input_type: text
+          antlers: false
+          display: Gradient
+          type: text
+          icon: text
+          listable: hidden
+          instructions_position: above
+  sidebar:
+    display: Sidebar
+    fields:
+      -
+        handle: slug
+        field:
+          type: slug
+          required: true
+          validate:
+            - required
