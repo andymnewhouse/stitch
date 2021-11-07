@@ -271,7 +271,7 @@ main_content:
             content:
               -
                 type: text
-                text: 'Diet Coke tervis'
+                text: 'Diet Coke tervis - keeps my fountain Diet Coke cold and bubbly'
       -
         type: list_item
         content:
@@ -371,7 +371,7 @@ main_content:
             content:
               -
                 type: text
-                text: 'Firefox, Chrome, and Safari - I can''t really pick which I like best'
+                text: 'Firefox, Brave, Chrome, and Safari - I can''t really pick which I like best'
       -
         type: list_item
         content:
@@ -444,6 +444,26 @@ main_content:
               -
                 type: text
                 text: ImageOptim
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://usecontrast.com/'
+                      rel: null
+                      target: null
+                      title: null
+                text: Contrast
+              -
+                type: text
+                text: ' - helps make sure the contrast of text/background is good'
   -
     type: heading
     attrs:
@@ -535,7 +555,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://timeular.com/'
+                      rel: null
+                      target: null
+                      title: null
                 text: Timeular
+              -
+                type: text
+                text: ' - helps me keep track of what I''m working on when and keeps myself accountable'
   -
     type: heading
     attrs:
@@ -555,7 +586,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://www.macbartender.com/'
+                      rel: null
+                      target: null
+                      title: null
                 text: Bartender
+              -
+                type: text
+                text: ' - Keeps the menu bar neat and tidy'
       -
         type: list_item
         content:
@@ -564,7 +606,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://justgetflux.com/'
+                      rel: null
+                      target: null
+                      title: null
                 text: Flux
+              -
+                type: text
+                text: ' - I get migraines a lot, and it makes the color of my computer''s display adapt to the time of day, warm at night and like sunlight during the day which helps reduce the number of my migraines (in addition to the blue light filter in my glasses)'
       -
         type: list_item
         content:
@@ -573,17 +626,19 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://www.mowglii.com/itsycal/'
+                      rel: null
+                      target: null
+                      title: null
                 text: Itsycal
-      -
-        type: list_item
-        content:
-          -
-            type: paragraph
-            content:
               -
                 type: text
-                text: Contrast
+                text: ' - adds a Windows like calendar view to the menu bar'
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636245474
+updated_at: 1636303999
 hero_image: andy/heros/my-desk.jpg
 ---
