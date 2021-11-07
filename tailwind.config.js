@@ -14,33 +14,58 @@ module.exports = {
       ...theme('colors'),
       default: theme('colors.black', 'currentColor'),
     }),
+
     inset: (theme, { negative }) => ({
       ...theme('spacing'),
       ...negative(theme('spacing')),
       '0': '0',
       auto: 'auto',
     }),
+
     extend: {
       borderRadius: {
         xl: '.75rem',
       },
+
       colors: {
         black: '#12151E',
         'hot-pink': '#fd2d78',
       },
+
       fontFamily: {
         display: 'var(--font-display)',
         body: 'var(--font-body)',
       },
+
       fontSize: {
         '7xl': '5rem',
         '8xl': '6rem',
         '9xl': '7rem',
       },
+
       screens: {
-        'print': {'raw': 'print'},
+        print: { raw: 'print' },
       },
+
       typography: (theme) => ({
+        DEFAULT: {
+          css: {
+            li: {
+              marginTop: 0,
+              marginBottom: 0,
+            },
+            '> ul > li p': {
+              marginTop: 0,
+              marginBottom: 0,
+            },
+            '> ul > li > *:first-child': {
+              marginTop: 0,
+            },
+            '> ul > li > *:last-child': {
+              marginBottom: 0,
+            },
+          },
+        },
         light: {
           css: [
             {

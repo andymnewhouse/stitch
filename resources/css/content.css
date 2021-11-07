@@ -1,9 +1,3 @@
 .heading {
-    @apply font-bold leading-none uppercase font-display;
-    margin-bottom: 1em;
-
-    font-size: min(max(3rem, 6.25vw), 7rem);
-    @supports (font-size: clamp(3rem, 6.25vw, 7rem)) {
-        font-size: clamp(3rem, 6.25vw, 7rem);
-    }
+    @apply mb-8 text-6xl font-bold leading-none font-display;
 }
