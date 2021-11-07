@@ -11,6 +11,9 @@ sections:
           validate:
             - required
       -
+        handle: hero_image
+        field: common.hero_image
+      -
         handle: content
         field:
           type: markdown

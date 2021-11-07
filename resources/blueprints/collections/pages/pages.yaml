@@ -12,15 +12,7 @@ sections:
             - required
       -
         handle: hero_image
-        field:
-          mode: grid
-          container: assets
-          restrict: false
-          allow_uploads: true
-          max_files: 1
-          type: assets
-          listable: hidden
-          display: 'Hero Image'
+        field: common.hero_image
       -
         handle: main_content
         field: common.main_content
@@ -40,14 +32,6 @@ sections:
             - strikethrough
             - code
             - codeblock
-      -
-        handle: template
-        field:
-          hide_partials: true
-          display: Template
-          type: template
-          icon: template
-          listable: hidden
   sidebar:
     display: Sidebar
     fields:
@@ -68,3 +52,11 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden

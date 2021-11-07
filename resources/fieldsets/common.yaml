@@ -167,3 +167,17 @@ fields:
                   style: 'equals gallery'
       enable_input_rules: true
       enable_paste_rules: true
+  -
+    handle: hero_image
+    field:
+      mode: list
+      container: assets
+      restrict: false
+      allow_uploads: false
+      show_filename: true
+      max_files: 1
+      display: 'Hero Image'
+      type: assets
+      icon: assets
+      listable: hidden
+      instructions_position: above

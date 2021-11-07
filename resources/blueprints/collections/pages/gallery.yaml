@@ -11,6 +11,9 @@ sections:
           validate:
             - required
       -
+        handle: hero_image
+        field: common.hero_image
+      -
         handle: folder
         field:
           input_type: text
@@ -18,14 +21,6 @@ sections:
           display: Folder
           type: text
           icon: text
-          listable: hidden
-      -
-        handle: template
-        field:
-          hide_partials: true
-          display: Template
-          type: template
-          icon: template
           listable: hidden
   sidebar:
     display: Sidebar
@@ -47,3 +42,11 @@ sections:
           max_items: 1
           listable: false
           localizable: true
+      -
+        handle: template
+        field:
+          hide_partials: true
+          display: Template
+          type: template
+          icon: template
+          listable: hidden
