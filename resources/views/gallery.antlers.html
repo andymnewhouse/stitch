@@ -3,10 +3,10 @@
         <h1 class="mb-4 heading">{{ title ?? 'Gallery'}}</h1>
     </header>
 
-    <section class="grid grid-cols-1 gap-6 py-8 glightbox md:grid-cols-2 lg:grid-cols-3">
-        {{ assets container="assets" folder="{folder}" }}
-        <a class="h-64 bg-center bg-cover rounded-lg shadow glightbox" data-gallery="gallery" href="{{ url }}" style="background-image: url({{ url }})">
-            <img src="{{ url }}" alt="{{ alt }}" class="sr-only" />
+    <section class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
+        {{ assets container="assets" scope="image" folder="{folder}" }}
+        <a class="overflow-hidden rounded-lg shadow-lg glightbox" data-gallery="gallery" href="{{ image.url }}">
+            <img src='{{ glide :src="image.url" fit="crop_focal" height="570" width="736" }}' alt="{{ image.alt }}" class="object-cover w-full h-64" />
         </a>
         {{ /assets }}
     </section>
