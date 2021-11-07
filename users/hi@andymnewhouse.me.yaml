@@ -4,7 +4,3 @@ avatar: andy.jpg
 handle: andy
 id: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
 password_hash: $2y$10$q5rb1VOM05baq8ypFCuFSe1v/iHDf0Vq.mw4bsS90hm56l7iJROpa
-preferences:
-  assets:
-    assets:
-      mode: grid
