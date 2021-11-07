@@ -263,7 +263,25 @@ main_content:
               -
                 type: text
                 text: 'Rubber Ducky'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: 'Diet Coke tervis'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                text: '3D Printed Coasters'
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636243679
+updated_at: 1636243808
 hero_image: andy/heros/my-desk.jpg
 ---
