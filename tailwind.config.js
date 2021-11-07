@@ -1,9 +1,25 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: [
       './resources/**/*.antlers.html',
       './resources/**/*.blade.php',
       './content/**/*.md',
+    ],
+    safelist: [
+        'from-red-500',
+        'to-red-700',
+        'from-orange-500',
+        'to-orange-700',
+        'from-yellow-500',
+        'to-yellow-700',
+        'from-green-500',
+        'to-green-700',
+        'from-blue-500',
+        'to-blue-700',
+        'from-purple-500',
+        'to-purple-700',
     ],
   },
 
@@ -30,6 +46,7 @@ module.exports = {
       colors: {
         black: '#12151E',
         'hot-pink': '#fd2d78',
+        orange: colors.orange,
       },
 
       fontFamily: {
