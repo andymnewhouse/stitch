@@ -95,3 +95,7 @@ sections:
             - category
           display: Category
           mode: select
+          instructions_position: above
+          listable: hidden
+          max_items: 1
+          create: true
