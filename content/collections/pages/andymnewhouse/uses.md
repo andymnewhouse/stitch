@@ -398,7 +398,7 @@ main_content:
             content:
               -
                 type: text
-                text: Helo
+                text: HELO
       -
         type: list_item
         content:
@@ -584,6 +584,6 @@ main_content:
                 type: text
                 text: Contrast
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636244688
+updated_at: 1636244914
 hero_image: andy/heros/my-desk.jpg
 ---
