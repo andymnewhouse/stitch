@@ -1,5 +1,5 @@
 ---
 title: Home
 id: home
-template: blog.index
+template: templates/blog/index
 ---

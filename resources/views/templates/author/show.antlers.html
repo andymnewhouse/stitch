@@ -1,18 +1,18 @@
 <article class="max-w-5xl mx-auto">
     {{ user:profile field="handle" :value="segment_2" }}
-    <header class="mx-auto max-w-3xl text-center content mb-16">
+    <header class="max-w-3xl mx-auto mb-16 text-center content">
         <p class="m-0">Written by</p>
         <h1 class="m-0">{{ name }}</h1>
     </header>
 
-    <section class="max-w-6xl mx-auto py-6">
+    <section class="max-w-6xl py-6 mx-auto">
         {{ collection:blog as="results" :author:is="id" }}
             {{ if ! results }}
                 <h2 class="text-center">{{ name }} hasn't written any articles.</h2>
             {{ else }}
-            <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+            <section class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
                 {{ results }}
-                    {{ partial:blog/card }}
+                    {{ partial:bit.entry }}
                 {{ /results }}
             </section>
             {{ /if }}
