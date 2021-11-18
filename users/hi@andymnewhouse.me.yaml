@@ -13,6 +13,3 @@ preferences:
         - hero_image
         - icon
         - gradient
-  assets:
-    assets:
-      mode: grid
