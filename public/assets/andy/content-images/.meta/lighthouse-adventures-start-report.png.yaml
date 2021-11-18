@@ -1,4 +1,5 @@
-data: {  }
+data:
+  alt: 'Performance 87/100, Accessibility 89/100, Best Practices 87/100, SEO 92/100'
 size: 6401
 last_modified: 1637201168
 width: 700
