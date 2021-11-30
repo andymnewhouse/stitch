@@ -4,7 +4,7 @@ sites:
   - andymnewhouse
   - jessnewhouse
   - printing
-template: default
+template: templates/default
 layout: layout
 revisions: false
 route: '{parent_uri}/{slug}'

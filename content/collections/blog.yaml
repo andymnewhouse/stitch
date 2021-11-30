@@ -4,7 +4,7 @@ sites:
   - andymnewhouse
   - jessnewhouse
   - printing
-template: blog/show
+template: templates/blog/show
 layout: layout
 mount: home
 taxonomies:
