@@ -48,6 +48,7 @@ module.exports = {
         'hot-pink': '#fd2d78',
         orange: colors.orange,
         lime: colors.lime,
+        emerald: colors.emerald,
         cyan: colors.cyan,
         purple: colors.purple,
         rose: colors.rose,

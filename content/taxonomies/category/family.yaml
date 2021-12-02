@@ -1,5 +1,7 @@
 title: Family
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636305655
+updated_at: 1638469357
 blueprint: category
 hero_image: nn-wedding/DSC05078.jpg
+icon: icons/family.svg
+gradient: 'from-purple-500 to-purple-700'

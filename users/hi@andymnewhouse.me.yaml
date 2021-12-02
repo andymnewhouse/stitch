@@ -13,3 +13,12 @@ preferences:
         - hero_image
         - icon
         - gradient
+  collections:
+    blog:
+      columns:
+        - title
+        - category
+        - site
+        - slug
+        - date
+        - author

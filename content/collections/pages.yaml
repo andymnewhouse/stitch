@@ -3,7 +3,6 @@ sites:
   - newestnewhouse
   - andymnewhouse
   - jessnewhouse
-  - printing
 template: templates/default
 layout: layout
 revisions: false

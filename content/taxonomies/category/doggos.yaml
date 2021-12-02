@@ -1,5 +1,7 @@
 title: Doggos
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636305497
+updated_at: 1638469294
 blueprint: category
 hero_image: nn-heros/geo.jpg
+icon: icons/dog.svg
+gradient: 'from-cyan-500 to-cyan-700'

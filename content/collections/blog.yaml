@@ -3,7 +3,6 @@ sites:
   - newestnewhouse
   - andymnewhouse
   - jessnewhouse
-  - printing
 template: templates/blog/show
 layout: layout
 mount: home

@@ -1,5 +1,7 @@
 title: Random
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636305691
+updated_at: 1638469461
 blueprint: category
 hero_image: nn-blog/san-fran-bridge-with-water.jpg
+icon: icons/recycle-bin.svg
+gradient: 'from-gray-500 to-gray-700'

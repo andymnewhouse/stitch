@@ -7,9 +7,9 @@
     </header>
 
     <section class="flex justify-between -mx-12 space-x-4">
-        {{ taxonomy from="category" collection="blog" site="andymnewhouse" }}
+        {{ categories }}
             {{ partial:bit.term }}
-        {{ /taxonomy }}
+        {{ /categories }}
     </section>
 
     {{ collection:blog as="posts" paginate="11" }}

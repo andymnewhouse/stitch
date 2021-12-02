@@ -1,5 +1,7 @@
 title: '3D Printing'
 hero_image: nn-heros/3d-printer.jpg
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636305579
+updated_at: 1638469445
 blueprint: category
+icon: icons/3d-printing.svg
+gradient: 'from-lime-500 to-lime-700'
