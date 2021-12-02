@@ -156,8 +156,9 @@ module.exports = {
   variants: {
     inset: ['responsive', 'hover'],
     extend: {
-      typography: ['dark'],
-      display: ['group-hover']
+        animation: ['hover', 'motion-safe', 'motion-reduce'],
+        display: ['group-hover'],
+        typography: ['dark'],
     },
   },
 
