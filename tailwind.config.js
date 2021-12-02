@@ -1,6 +1,7 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
   purge: {
     content: [
       './resources/**/*.antlers.html',
@@ -8,18 +9,28 @@ module.exports = {
       './content/**/*.md',
     ],
     safelist: [
-        'from-red-500',
-        'to-red-700',
-        'from-orange-500',
-        'to-orange-700',
-        'from-yellow-500',
-        'to-yellow-700',
-        'from-green-500',
-        'to-green-700',
-        'from-blue-500',
-        'to-blue-700',
-        'from-purple-500',
-        'to-purple-700',
+      'from-red-500',
+      'to-red-700',
+      'from-orange-500',
+      'to-orange-700',
+      'from-yellow-500',
+      'to-yellow-700',
+      'from-lime-500',
+      'to-lime-700',
+      'from-green-500',
+      'to-green-700',
+      'from-emerald-500',
+      'to-emerald-700',
+      'from-blue-500',
+      'to-blue-700',
+      'from-purple-500',
+      'to-purple-700',
+      'from-indigo-500',
+      'to-indigo-700',
+      'from-cyan-500',
+      'to-cyan-700',
+      'from-rose-500',
+      'to-rose-700',
     ],
   },
 
@@ -156,9 +167,9 @@ module.exports = {
   variants: {
     inset: ['responsive', 'hover'],
     extend: {
-        animation: ['hover', 'motion-safe', 'motion-reduce'],
-        display: ['group-hover'],
-        typography: ['dark'],
+      animation: ['hover', 'motion-safe', 'motion-reduce'],
+      display: ['group-hover'],
+      typography: ['dark'],
     },
   },
 

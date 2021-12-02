@@ -1,9 +1,9 @@
 <nav x-data="{searching: false}" class="bg-gray-800 print:hidden">
-    <div class="flex items-center justify-between h-16 max-w-5xl px-3 py-3 mx-auto">
-        <a href="/" class="flex items-center space-x-4 text-xl font-bold hover:text-blue-700 dark:hover:text-blue-400" x-show="! searching">
+    <div class="max-w-5xl px-3 py-3 mx-auto md:h-16 md:flex md:items-center md:justify-between">
+        <a href="/" class="flex items-center justify-center space-x-4 text-xl font-bold hover:text-blue-700 dark:hover:text-blue-400" x-show="! searching">
             <span>{{ settings:site_name }}</span>
         </a>
-        <div class="flex space-x-6">
+        <div class="flex justify-center mt-4 space-x-6 md:mt-0">
             {{ nav:main }}
                 <a href="{{ url }}" class="flex items-center space-x-4 font-bold hover:text-blue-700 dark:hover:text-blue-400">
                     {{ title }}

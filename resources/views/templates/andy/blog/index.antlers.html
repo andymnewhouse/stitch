@@ -1,12 +1,12 @@
 <div class="max-w-6xl px-3 mx-auto space-y-12">
     <header class="space-y-4 md:space-y-0 md:space-x-12 md:max-w-4xl md:mx-auto md:flex md:items-center">
-        <img src="/assets/andy.jpg" class="w-64 h-64 my-0 rounded-full">
-        <div class="prose prose-xl dark:prose-light">
+        <img src="/assets/andy.jpg" class="w-64 h-64 mx-auto my-0 rounded-full">
+        <div class="prose md:prose-xl dark:prose-light">
             {{ partial:bard :bard_field="main_content" }}
         </div>
     </header>
 
-    <section class="flex justify-between -mx-12 space-x-4">
+    <section class="flex pb-4 space-x-4 overflow-scroll md:pb-0 md:justify-between md:-mx-12">
         {{ categories }}
             {{ partial:bit.term }}
         {{ /categories }}
