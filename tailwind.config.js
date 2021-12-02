@@ -47,6 +47,10 @@ module.exports = {
         black: '#12151E',
         'hot-pink': '#fd2d78',
         orange: colors.orange,
+        lime: colors.lime,
+        cyan: colors.cyan,
+        purple: colors.purple,
+        rose: colors.rose,
       },
 
       fontFamily: {
@@ -152,6 +156,7 @@ module.exports = {
     inset: ['responsive', 'hover'],
     extend: {
       typography: ['dark'],
+      display: ['group-hover']
     },
   },
 

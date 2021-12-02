@@ -1,0 +1,37 @@
+<div class="max-w-6xl px-3 mx-auto space-y-12">
+    <header class="space-y-4 md:space-y-0 md:space-x-12 md:max-w-4xl md:mx-auto md:flex md:items-center">
+        <img src="/assets/andy.jpg" class="w-64 h-64 my-0 rounded-full">
+        <div class="prose prose-xl dark:prose-light">
+            {{ partial:bard :bard_field="main_content" }}
+        </div>
+    </header>
+
+    <section class="flex justify-between -mx-12 space-x-4">
+        {{ taxonomy from="category" collection="blog" site="andymnewhouse" }}
+            {{ partial:bit.term }}
+        {{ /taxonomy }}
+    </section>
+
+    {{ collection:blog as="posts" paginate="11" }}
+        <section class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
+            {{ posts }}
+                <div class="{{ first ? 'md:col-span-2' : 'col-span-1' }}">
+                    {{ partial:bit.entry oversized="{{ first ? 'true' : 'false' }}" }}
+                </div>
+            {{ /posts }}
+        </section>
+
+        {{ paginate }}
+            {{ if prev_page || next_page }}
+            <section class="flex justify-center pt-16 space-x-8 text-xl font-bold">
+                {{ if prev_page }}
+                    <a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer articles</a>
+                {{ /if }}
+                {{ if next_page }}
+                    <a href="{{ next_page }}">Older articles <span class="squiggle">&rarr;</span></a>
+                {{ /if }}
+            </section>
+            {{ /if }}
+        {{ /paginate }}
+    {{ /collection:blog }}
+</div>

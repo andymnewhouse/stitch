@@ -11,8 +11,10 @@ const lightbox = GLightbox({
 
 import Alpine from 'alpinejs'
 import intersect from '@alpinejs/intersect'
+import tooltip from "@ryangjchandler/alpine-tooltip"
 
 Alpine.plugin(intersect)
+Alpine.plugin(tooltip)
 
 window.Alpine = Alpine
 

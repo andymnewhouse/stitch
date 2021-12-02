@@ -1,0 +1,27 @@
+<article class="max-w-6xl px-3 mx-auto">
+    <header class="max-w-xl mx-auto text-center">
+        <h1 class="mb-4 heading">{{ title }}</h1>
+    </header>
+    {{ entries as="posts" paginate="11" }}
+    <section class="grid grid-cols-1 gap-6 py-8 md:grid-cols-2 lg:grid-cols-3">
+        {{ posts }}
+            <div class="{{ first ? 'md:col-span-2' : 'col-span-1' }}">
+                {{ partial:bit.entry oversized="{{ first ? 'true' : 'false' }}" }}
+            </div>
+        {{ /posts }}
+    </section>
+
+    {{ paginate }}
+        {{ if prev_page || next_page }}
+        <section class="flex justify-center pt-16 space-x-8 text-xl font-bold">
+            {{ if prev_page }}
+                <a href="{{ prev_page }}"><span class="squiggle">&larr;</span> Newer articles</a>
+            {{ /if }}
+            {{ if next_page }}
+                <a href="{{ next_page }}">Older articles <span class="squiggle">&rarr;</span></a>
+            {{ /if }}
+        </section>
+        {{ /if }}
+    {{ /paginate }}
+    {{ /entries }}
+</article>
