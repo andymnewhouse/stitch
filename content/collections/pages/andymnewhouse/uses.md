@@ -380,7 +380,27 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://spatie.be/products/ray'
+                      rel: null
+                      target: null
+                      title: null
                 text: Ray
+              -
+                type: text
+                text: ' - helpful for debugging when I don''t want to drop '
+              -
+                type: text
+                marks:
+                  -
+                    type: code
+                text: dd()
+              -
+                type: text
+                text: ' everywhere'
       -
         type: list_item
         content:
@@ -389,7 +409,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://invoker.dev/'
+                      rel: null
+                      target: null
+                      title: null
                 text: Invoker
+              -
+                type: text
+                text: ' - what I use for side projects instead of building an admin panel'
       -
         type: list_item
         content:
@@ -398,7 +429,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://beyondco.de/software/helo'
+                      rel: null
+                      target: null
+                      title: null
                 text: HELO
+              -
+                type: text
+                text: ' - go-to app for testing emails'
       -
         type: list_item
         content:
@@ -407,7 +449,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://www.git-tower.com'
+                      rel: null
+                      target: null
+                      title: null
                 text: Tower
+              -
+                type: text
+                text: ' - my git gui of choice'
       -
         type: list_item
         content:
@@ -416,7 +469,7 @@ main_content:
             content:
               -
                 type: text
-                text: Transmit
+                text: 'Transmit - some side clients prefer FTP, so this makes it easier'
       -
         type: list_item
         content:
@@ -425,7 +478,7 @@ main_content:
             content:
               -
                 type: text
-                text: 'Laravel Valet'
+                text: 'Laravel Valet - so I don''t have to bother with Docker'
       -
         type: list_item
         content:
@@ -434,7 +487,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://dbngin.com/'
+                      rel: null
+                      target: null
+                      title: null
                 text: DBngin
+              -
+                type: text
+                text: ' - manages databases so I don''t have to bother with Docker'
       -
         type: list_item
         content:
@@ -443,7 +507,18 @@ main_content:
             content:
               -
                 type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://imageoptim.com'
+                      rel: null
+                      target: null
+                      title: null
                 text: ImageOptim
+              -
+                type: text
+                text: ' - minifys images so they''re not HUGE'
       -
         type: list_item
         content:
@@ -464,6 +539,26 @@ main_content:
               -
                 type: text
                 text: ' - helps make sure the contrast of text/background is good'
+      -
+        type: list_item
+        content:
+          -
+            type: paragraph
+            content:
+              -
+                type: text
+                marks:
+                  -
+                    type: link
+                    attrs:
+                      href: 'https://github.com/nicoverbruggen/phpmon'
+                      rel: null
+                      target: null
+                      title: null
+                text: 'PHP Monitor'
+              -
+                type: text
+                text: ' - easy php version switcher and lets you know which version you are on in the navbar'
   -
     type: heading
     attrs:
@@ -639,6 +734,6 @@ main_content:
                 type: text
                 text: ' - adds a Windows like calendar view to the menu bar'
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636303999
+updated_at: 1638554356
 hero_image: andy/heros/my-desk.jpg
 ---
