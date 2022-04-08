@@ -8,9 +8,9 @@ social:
     icon: site/social-icons/email.svg
   -
     name: Twitter
-    url: 'https://twitter.com/andymnewhouse'
+    url: 'https://twitter.com/techenby'
     icon: site/social-icons/twitter.svg
   -
     name: Github
-    url: 'https://github.com/andymnewhouse'
+    url: 'https://github.com/techenby'
     icon: site/social-icons/github.svg
