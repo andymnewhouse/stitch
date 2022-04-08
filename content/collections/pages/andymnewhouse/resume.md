@@ -4,12 +4,19 @@ blueprint: resume
 title: Resume
 jobs:
   -
+    start: '2022-03-14'
+    title: Programmer
+    company: Tighten
+    type: job
+    enabled: true
+  -
     start: '2017-09-11'
     title: 'Web Developer'
     description: 'Managed all IT and web properties for Acoustica and Cherry Audio. Created a store from the ground up for Cherry Audio.'
     type: job
     enabled: true
     company: Acoustica
+    end: '2022-02-23'
   -
     start: '2016-02-14'
     title: 'Director of Technology'
@@ -64,6 +71,6 @@ education: |-
   2011-2015 Illinois State University
   Bachelor of Science - IT Web Application Development
 updated_by: 036389ec-e4c8-4f9d-86ba-21d98c3226b1
-updated_at: 1636245556
+updated_at: 1649452353
 template: templates/resume
 ---
